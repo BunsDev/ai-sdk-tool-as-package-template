@@ -82,4 +82,4 @@ pnpm publish
 
 ## License
 
-ISC
+MIT
