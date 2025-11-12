@@ -41,7 +41,7 @@ pnpm install
 cp .env.example .env
 ```
 
-4. Add your OpenAI API key to `.env`
+4. Add your Vercel AI Gateway (or other preferred provider) API key to `.env`
 
 ### Testing
 
