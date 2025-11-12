@@ -11,7 +11,7 @@ npm install ai-sdk-tool-as-package-template
 ## Usage
 
 ```typescript
-import { weatherTool } from "ai-sdk-tool-package-template";
+import { weatherTool } from "ai-sdk-tool-as-package-template";
 import { generateText } from "ai";
 import { openai } from "@ai-sdk/openai";
 
