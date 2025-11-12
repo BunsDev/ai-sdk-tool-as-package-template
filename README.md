@@ -5,7 +5,7 @@ A TypeScript package template for building and publishing AI SDK tools.
 ## Installation
 
 ```bash
-npm install ai-sdk-tool-package-template
+npm install ai-sdk-tool-as-package-template
 ```
 
 ## Usage
