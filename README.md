@@ -18,31 +18,19 @@ const result = await generateText({
   model: gateway("openai/gpt-4o-mini"),
   prompt: "What's the weather like in San Francisco?",
   tools: {
-    getWeather: getWeather({ unit: "Celsius" }),
+    getWeather: getWeather({ unit: "celsius" }),
   },
 });
 ```
 
 ### Options
 
-The `getWeather` tool accepts an optional configuration object:
+You can configure options for your tool. The example implementation, `getWeather` tool, accepts an optional configuration object:
 
 ```typescript
 type WeatherToolOptions = {
-  unit?: "Fahrenheit" | "Celsius";
+  unit?: "fahrenheit" | "celsius";
 };
-```
-
-**Example with Fahrenheit:**
-
-```typescript
-const result = await generateText({
-  model: gateway("openai/gpt-4o-mini"),
-  prompt: "What's the weather like in San Francisco?",
-  tools: {
-    getWeather: getWeather({ unit: "Fahrenheit" }),
-  },
-});
 ```
 
 ## Development
@@ -95,9 +83,11 @@ pnpm publish
 ```
 .
 ├── src/
-│   ├── index.ts      # Your tool exports
-│   └── test.ts       # Test script
-├── dist/             # Build output (generated)
+│   ├── tools/
+│   │   └── weather.ts    # Example weather tool implementation
+│   ├── index.ts          # Your tool exports
+│   └── test.ts           # Test script
+├── dist/                 # Build output (generated)
 ├── package.json
 ├── tsconfig.json
 └── README.md
