@@ -1,3 +1,1 @@
-import { getWeather } from "./tools/weather";
-
-export { getWeather };
+export { getWeather } from "./tools/weather";
